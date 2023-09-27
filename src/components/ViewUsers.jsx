@@ -20,9 +20,9 @@ const ViewUsers = () => {
           {
             user.users.map((user, index) =>
               <li key={index}>
-                {`${user.name.title}
-                 ${user.name.first}
-                  ${user.name.last}`}
+                {user.name.title}{'. '}
+                {user.name.first}{' '}
+                {user.name.last}{' '}             
               </li>)
           }
         </ul>
